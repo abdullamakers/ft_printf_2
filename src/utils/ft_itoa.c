@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abdualsh <abdualsh@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/12/09 15:31:05 by abdualsh          #+#    #+#             */
+/*   Updated: 2025/12/09 15:38:12 by abdualsh         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../../include/ft_printf.h"
 
 static int	itoa_fill(long n, char *buf)
@@ -18,6 +30,7 @@ static int	itoa_fill(long n, char *buf)
 		buf[i++] = '-';
 	return (i);
 }
+
 char	*ft_itoa(long n)
 {
 	char	buf[32];
@@ -44,5 +57,3 @@ char	*ft_itoa(long n)
 		res[j++] = buf[len];
 	return (res);
 }
-
-
