@@ -31,7 +31,6 @@ SRC = $(SRC_DIR)/ft_printf.c \
       $(UTILS_DIR)/ft_putchar.c \
       $(UTILS_DIR)/ft_putnchar.c \
       $(UTILS_DIR)/ft_putstrn.c \
-      $(UTILS_DIR)/ft_itoa.c \
       $(UTILS_DIR)/ft_utoa.c \
       $(UTILS_DIR)/ft_xtoa.c
 

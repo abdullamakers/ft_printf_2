@@ -6,7 +6,7 @@
 /*   By: abdualsh <abdualsh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/09 15:29:22 by abdualsh          #+#    #+#             */
-/*   Updated: 2025/12/09 15:29:25 by abdualsh         ###   ########.fr       */
+/*   Updated: 2025/12/10 16:14:26 by abdualsh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,18 +19,17 @@
 
 typedef struct s_fmt
 {
-	int	flag_minus;
-	int	flag_plus;
-	int	flag_space;
-	int	flag_zero;
-	int	flag_hash;
-	int	width;
-	int	prec;
-	int	has_prec;
 	char	type;
-    int zeros;
-    int spaces;
-
+	int		flag_minus;
+	int		flag_plus;
+	int		flag_space;
+	int		flag_zero;
+	int		flag_hash;
+	int		width;
+	int		prec;
+	int		has_prec;
+	int		zeros;
+	int		spaces;
 }	t_fmt;
 
 /* main */
@@ -66,7 +65,6 @@ int		ft_isdigit(int c);
 void	ft_putchar(char c);
 int		ft_putnchar(char c, int n);
 int		ft_putstrn(const char *s, int n);
-char	*ft_itoa(long n);
 char	*ft_utoa(unsigned long n);
 char	*ft_xtoa(unsigned long n, int upper);
 
